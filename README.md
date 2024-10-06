@@ -2,7 +2,6 @@
 
 This project implements a Kinyarwanda translation model using TensorFlow and Keras. It aims to translate English sentences into Kinyarwanda using a sequence-to-sequence architecture with LSTM and attention mechanisms.
 
-#Table of Contents
 ## Table of Contents
 
 - [Dataset Creation and Preprocessing](#dataset-creation-and-preprocessing)
@@ -24,7 +23,8 @@ Data Collection: The dataset is hardcoded within the script, consisting of simpl
     ("Good morning", "Mwaramutse"),
     ("Thank you", "Murakoze"),
     ("Goodbye", "Murabeho"),
-]```
+]
+```
 - Tokenization: The English and Kinyarwanda sentences are tokenized using Tokenizer from Keras. Each word is assigned a unique index.
 - Padding: The sequences are padded to ensure uniform input sizes using pad_sequences. This allows the model to process batches of sentences efficiently.
 - Data Preparation: The processed data consists of padded sequences ready for training, along with their corresponding tokenizers for inverse transformations.
